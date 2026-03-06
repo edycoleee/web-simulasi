@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Absensi - absen.sulfat.site</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #e0e0e0;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 40px;
+      width: 100%;
+      max-width: 480px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .logo .icon {
+      font-size: 56px;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .logo h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #53c0f0;
+      letter-spacing: 1px;
+    }
+
+    .logo p {
+      font-size: 13px;
+      color: #aaa;
+      margin-top: 4px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #bbb;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px 16px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 8px;
+      color: #fff;
+      font-size: 15px;
+      outline: none;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    input::placeholder {
+      color: #666;
+    }
+
+    input:focus, select:focus {
+      border-color: #53c0f0;
+      background: rgba(83, 192, 240, 0.08);
+    }
+
+    select option {
+      background: #1a1a2e;
+      color: #e0e0e0;
+    }
+
+    .status-group {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .status-btn {
+      flex: 1;
+      padding: 12px;
+      border: 2px solid rgba(255,255,255,0.15);
+      border-radius: 8px;
+      background: transparent;
+      color: #aaa;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-align: center;
+    }
+
+    .status-btn:hover {
+      border-color: #53c0f0;
+      color: #53c0f0;
+    }
+
+    .status-btn.active.hadir {
+      background: rgba(46, 213, 115, 0.2);
+      border-color: #2ed573;
+      color: #2ed573;
+    }
+
+    .status-btn.active.sakit {
+      background: rgba(255, 165, 0, 0.2);
+      border-color: orange;
+      color: orange;
+    }
+
+    .status-btn.active.izin {
+      background: rgba(83, 192, 240, 0.2);
+      border-color: #53c0f0;
+      color: #53c0f0;
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(90deg, #53c0f0, #3a9bd5);
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: 0.5px;
+      transition: opacity 0.2s, transform 0.1s;
+    }
+
+    .btn-submit:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+
+    .btn-submit:active {
+      transform: translateY(0);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 12px;
+      color: #555;
+    }
+
+    .toast {
+      display: none;
+      margin-top: 16px;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .toast.success {
+      background: rgba(46, 213, 115, 0.15);
+      border: 1px solid #2ed573;
+      color: #2ed573;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <span class="icon">📋</span>
+      <h1>Sistem Absensi</h1>
+      <p>absen.sulfat.site</p>
+    </div>
+
+    <form id="absenForm">
+      <div class="form-group">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" placeholder="Masukkan nama lengkap" required />
+      </div>
+
+      <div class="form-group">
+        <label for="nip">NIP / NIM</label>
+        <input type="text" id="nip" placeholder="Masukkan NIP atau NIM" required />
+      </div>
+
+      <div class="form-group">
+        <label for="divisi">Divisi / Kelas</label>
+        <select id="divisi" required>
+          <option value="" disabled selected>-- Pilih Divisi --</option>
+          <option value="teknik">Teknik Informatika</option>
+          <option value="sistem">Sistem Informasi</option>
+          <option value="jaringan">Teknik Jaringan</option>
+          <option value="administrasi">Administrasi</option>
+          <option value="operasional">Operasional</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Status Kehadiran</label>
+        <div class="status-group">
+          <button type="button" class="status-btn hadir" onclick="setStatus('hadir', this)">✅ Hadir</button>
+          <button type="button" class="status-btn sakit" onclick="setStatus('sakit', this)">🤒 Sakit</button>
+          <button type="button" class="status-btn izin" onclick="setStatus('izin', this)">📝 Izin</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="keterangan">Keterangan (opsional)</label>
+        <input type="text" id="keterangan" placeholder="Tambahkan keterangan jika ada" />
+      </div>
+
+      <button type="submit" class="btn-submit">Kirim Absensi</button>
+
+      <div class="toast success" id="toast">
+        ✅ Absensi berhasil dicatat!
+      </div>
+    </form>
+
+    <div class="footer">
+      &copy; 2026 sulfat.site &mdash; Sistem Absensi Digital
+    </div>
+  </div>
+
+  <script>
+    let selectedStatus = '';
+
+    function setStatus(status, el) {
+      document.querySelectorAll('.status-btn').forEach(btn => btn.classList.remove('active', 'hadir', 'sakit', 'izin'));
+      el.classList.add('active', status);
+      selectedStatus = status;
+    }
+
+    document.getElementById('absenForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const nama = document.getElementById('nama').value.trim();
+      const nip = document.getElementById('nip').value.trim();
+      const divisi = document.getElementById('divisi').value;
+
+      if (!nama || !nip || !divisi || !selectedStatus) {
+        alert('Harap lengkapi semua data termasuk status kehadiran.');
+        return;
+      }
+
+      const toast = document.getElementById('toast');
+      toast.style.display = 'block';
+      toast.textContent = `✅ Absensi "${nama}" sebagai ${selectedStatus.toUpperCase()} berhasil dicatat!`;
+
+      this.reset();
+      selectedStatus = '';
+      document.querySelectorAll('.status-btn').forEach(btn => btn.classList.remove('active', 'hadir', 'sakit', 'izin'));
+
+      setTimeout(() => { toast.style.display = 'none'; }, 4000);
+    });
+  </script>
+</body>
+</html>

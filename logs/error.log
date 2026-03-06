@@ -1,0 +1,117 @@
+2026/03/05 09:45:56 [notice] 1#1: using the "epoll" event method
+2026/03/05 09:45:56 [notice] 1#1: nginx/1.29.5
+2026/03/05 09:45:56 [notice] 1#1: built by gcc 15.2.0 (Alpine 15.2.0) 
+2026/03/05 09:45:56 [notice] 1#1: OS: Linux 6.8.0-101-generic
+2026/03/05 09:45:56 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2026/03/05 09:45:56 [notice] 1#1: start worker processes
+2026/03/05 09:45:56 [notice] 1#1: start worker process 21
+2026/03/05 09:45:56 [notice] 1#1: start worker process 22
+2026/03/05 09:45:56 [notice] 1#1: start worker process 23
+2026/03/05 09:45:56 [notice] 1#1: start worker process 24
+2026/03/05 09:45:56 [notice] 1#1: start worker process 25
+2026/03/05 09:45:56 [notice] 1#1: start worker process 26
+2026/03/05 09:45:56 [notice] 1#1: start worker process 27
+2026/03/05 09:45:56 [notice] 1#1: start worker process 28
+2026/03/05 09:46:21 [error] 21#21: *1 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "192.10.10.152:8080", referrer: "http://192.10.10.152:8080/"
+2026/03/05 09:52:30 [error] 23#23: *3 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "absen.sulfat.site", referrer: "http://absen.sulfat.site/"
+2026/03/05 10:02:02 [error] 28#28: *8 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "192.10.10.15", referrer: "http://192.10.10.15/login"
+2026/03/05 10:04:32 [error] 24#24: *58 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "absen.sulfat.site", referrer: "http://absen.sulfat.site/"
+2026/03/05 10:14:29 [emerg] 366#366: "log_format" directive is not allowed here in /etc/nginx/conf.d/default.conf:27
+2026/03/05 10:14:49 [notice] 384#384: signal process started
+2026/03/05 10:14:49 [notice] 1#1: signal 1 (SIGHUP) received from 384, reconfiguring
+2026/03/05 10:14:49 [notice] 1#1: reconfiguring
+2026/03/05 10:14:49 [notice] 1#1: using the "epoll" event method
+2026/03/05 10:14:49 [notice] 1#1: start worker processes
+2026/03/05 10:14:49 [notice] 1#1: start worker process 390
+2026/03/05 10:14:49 [notice] 1#1: start worker process 391
+2026/03/05 10:14:49 [notice] 1#1: start worker process 392
+2026/03/05 10:14:49 [notice] 1#1: start worker process 393
+2026/03/05 10:14:49 [notice] 1#1: start worker process 394
+2026/03/05 10:14:49 [notice] 1#1: start worker process 395
+2026/03/05 10:14:49 [notice] 1#1: start worker process 396
+2026/03/05 10:14:49 [notice] 1#1: start worker process 397
+2026/03/05 10:14:49 [notice] 21#21: gracefully shutting down
+2026/03/05 10:14:49 [notice] 28#28: gracefully shutting down
+2026/03/05 10:14:49 [notice] 23#23: gracefully shutting down
+2026/03/05 10:14:49 [notice] 22#22: gracefully shutting down
+2026/03/05 10:14:49 [notice] 26#26: gracefully shutting down
+2026/03/05 10:14:49 [notice] 21#21: exiting
+2026/03/05 10:14:49 [notice] 28#28: exiting
+2026/03/05 10:14:49 [notice] 27#27: gracefully shutting down
+2026/03/05 10:14:49 [notice] 25#25: gracefully shutting down
+2026/03/05 10:14:49 [notice] 23#23: exiting
+2026/03/05 10:14:49 [notice] 22#22: exiting
+2026/03/05 10:14:49 [notice] 26#26: exiting
+2026/03/05 10:14:49 [notice] 27#27: exiting
+2026/03/05 10:14:49 [notice] 25#25: exiting
+2026/03/05 10:14:49 [notice] 24#24: gracefully shutting down
+2026/03/05 10:14:49 [notice] 24#24: exiting
+2026/03/05 10:14:49 [notice] 28#28: exit
+2026/03/05 10:14:49 [notice] 21#21: exit
+2026/03/05 10:14:49 [notice] 22#22: exit
+2026/03/05 10:14:49 [notice] 23#23: exit
+2026/03/05 10:14:49 [notice] 25#25: exit
+2026/03/05 10:14:49 [notice] 26#26: exit
+2026/03/05 10:14:49 [notice] 27#27: exit
+2026/03/05 10:14:49 [notice] 24#24: exit
+2026/03/05 10:14:49 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2026/03/05 10:14:49 [notice] 1#1: worker process 26 exited with code 0
+2026/03/05 10:14:49 [notice] 1#1: worker process 27 exited with code 0
+2026/03/05 10:14:49 [notice] 1#1: signal 29 (SIGIO) received
+2026/03/05 10:14:49 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2026/03/05 10:14:49 [notice] 1#1: worker process 24 exited with code 0
+2026/03/05 10:14:49 [notice] 1#1: signal 29 (SIGIO) received
+2026/03/05 10:14:49 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2026/03/05 10:14:49 [notice] 1#1: worker process 22 exited with code 0
+2026/03/05 10:14:49 [notice] 1#1: signal 29 (SIGIO) received
+2026/03/05 10:14:49 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2026/03/05 10:14:49 [notice] 1#1: worker process 25 exited with code 0
+2026/03/05 10:14:49 [notice] 1#1: worker process 28 exited with code 0
+2026/03/05 10:14:49 [notice] 1#1: signal 29 (SIGIO) received
+2026/03/05 10:14:49 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2026/03/05 10:14:49 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2026/03/05 10:14:49 [notice] 1#1: worker process 21 exited with code 0
+2026/03/05 10:14:49 [notice] 1#1: signal 29 (SIGIO) received
+2026/03/05 10:14:49 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2026/03/05 10:14:49 [notice] 1#1: worker process 23 exited with code 0
+2026/03/05 10:14:49 [notice] 1#1: signal 29 (SIGIO) received
+2026/03/05 16:43:16 [error] 394#394: *75 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "absen.sulfat.site", referrer: "https://absen.sulfat.site/"
+2026/03/05 17:00:02 [error] 390#390: *81 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "absen.sulfat.site", referrer: "https://absen.sulfat.site/"
+2026/03/05 17:15:44 [error] 393#393: *130 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "absen.sulfat.site", referrer: "https://absen.sulfat.site/"
+2026/03/05 17:48:43 [error] 396#396: *181 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "202.46.74.28"
+2026/03/05 17:48:44 [error] 396#396: *182 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "202.46.74.28"
+2026/03/05 19:23:51 [error] 397#397: *198 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "202.46.74.28"
+2026/03/05 19:23:55 [error] 397#397: *200 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "202.46.74.28"
+2026/03/05 19:24:05 [error] 397#397: *202 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "202.46.74.28"
+2026/03/05 19:38:00 [error] 390#390: *222 open() "/usr/share/nginx/html/var/task/next.config.js" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /var/task/next.config.js HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 19:38:01 [error] 391#391: *224 open() "/usr/share/nginx/html/app/next.config.js" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /app/next.config.js HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 19:38:02 [error] 391#391: *226 open() "/usr/share/nginx/html/app/nuxt.config.js" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /app/nuxt.config.js HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 19:38:12 [error] 391#391: *232 open() "/usr/share/nginx/html/var/task/nuxt.config.js" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /var/task/nuxt.config.js HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 19:40:15 [error] 397#397: *459 open() "/usr/share/nginx/html/stripe.config.js" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /stripe.config.js HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 19:40:15 [error] 390#390: *463 open() "/usr/share/nginx/html/public/stripe.js" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /public/stripe.js HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 19:40:18 [error] 390#390: *470 open() "/usr/share/nginx/html/client/stripe.config.js" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /client/stripe.config.js HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 19:40:22 [error] 390#390: *477 open() "/usr/share/nginx/html/src/config/stripe.js" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /src/config/stripe.js HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 22:18:38 [error] 394#394: *535 open() "/usr/share/nginx/html/Public/home/js/check.js" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /Public/home/js/check.js HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 22:18:48 [error] 394#394: *536 open() "/usr/share/nginx/html/Public/home/js/check.js" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /Public/home/js/check.js HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 22:19:04 [error] 394#394: *538 open() "/usr/share/nginx/html/Public/home/js/check.js" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /Public/home/js/check.js HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 22:19:12 [error] 394#394: *539 open() "/usr/share/nginx/html/static/admin/javascript/hetong.js" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /static/admin/javascript/hetong.js HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 22:19:21 [error] 394#394: *540 open() "/usr/share/nginx/html/static/admin/javascript/hetong.js" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /static/admin/javascript/hetong.js HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 22:21:34 [error] 394#394: *541 open() "/usr/share/nginx/html/static/admin/javascript/hetong.js" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /static/admin/javascript/hetong.js HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 22:21:34 [error] 394#394: *542 open() "/usr/share/nginx/html/static/admin/javascript/hetong.js" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /static/admin/javascript/hetong.js HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 22:21:35 [error] 395#395: *543 open() "/usr/share/nginx/html/static/admin/javascript/hetong.js" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /static/admin/javascript/hetong.js HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 22:47:09 [error] 395#395: *549 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 22:50:16 [error] 395#395: *553 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "202.46.74.28"
+2026/03/05 22:54:24 [error] 395#395: *555 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 22:55:56 [error] 395#395: *557 open() "/usr/share/nginx/html/js/twint_ch.js" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /js/twint_ch.js HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 22:55:56 [error] 395#395: *558 open() "/usr/share/nginx/html/static/style/sys_files/index.js" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /static/style/sys_files/index.js HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 22:55:57 [error] 396#396: *559 open() "/usr/share/nginx/html/static/style/protect/index.js" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /static/style/protect/index.js HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 22:55:57 [error] 396#396: *560 open() "/usr/share/nginx/html/js/lkk_ch.js" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /js/lkk_ch.js HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 22:55:57 [error] 396#396: *561 open() "/usr/share/nginx/html/css/support_parent.css" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /css/support_parent.css HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 22:55:57 [error] 396#396: *563 open() "/usr/share/nginx/html/assets/js/qr_modal.js" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /assets/js/qr_modal.js HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 22:57:29 [error] 396#396: *565 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 22:59:36 [error] 396#396: *567 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 23:01:20 [error] 396#396: *569 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "absen.sulfat.site"
+2026/03/05 23:05:11 [error] 396#396: *571 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "absen.sulfat.site"
+2026/03/06 01:02:04 [error] 392#392: *628 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "202.46.74.28"
+2026/03/06 01:29:31 [error] 392#392: *631 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "202.46.74.28"
+2026/03/06 07:11:32 [error] 396#396: *702 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.10.10.1, server: absen.sulfat.site, request: "GET /favicon.ico HTTP/1.1", host: "absen.sulfat.site", referrer: "https://absen.sulfat.site/"
